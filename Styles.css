@@ -1,0 +1,488 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.bg-skyblue {
+  background-color: #019ed1; /* Adjust this color to match the exact shade of sky blue you need */
+}
+
+.contact-info {
+  padding: 0.3rem 0; /* Adjust vertical padding to 4px (approximately 0.5 rem) */
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 0.7rem; /* Smaller font size */
+}
+
+.logo-nav {
+  padding: 5px 0; /* Decrease padding for less height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for elevation effect */
+}
+
+.logo {
+  max-width: 300px; /* Decrease logo size */
+  padding-left: 10px; /* Increase padding left for logo */
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.7rem; /* Smaller font size */
+  font-weight: bold;
+  color: #333; /* Adjust color as needed */
+  padding-right: 15px; /* Increase padding right for nav links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Adjust hover color as needed */
+}
+
+/* Additional styling for the fixed position */
+body {
+  padding-top: 170px; /* Adjust this value to account for the fixed header height */
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* Ensure equal height */
+  padding: 0;
+  margin: 0;
+}
+
+.hero-image,
+.hero-content {
+  flex: 0 0 40%;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-content {
+  flex: 0 0 60%;
+  background-color: #019ed1;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideInRight 1s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15px;
+}
+
+.hero-buttons .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+.centered-section {
+  padding: 40px 0;
+}
+
+.centered-logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.centered-section h2 {
+  color: #019ed1;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.centered-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.centered-line {
+  width: 100px;
+  border-top: 2px solid #019ed1;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .centered-section h2 {
+    font-size: 1.2rem;
+  }
+  .centered-section p {
+    font-size: 1rem;
+  }
+}
+.text-image-section {
+  padding: 40px 0;
+}
+
+.text-image-section h2 {
+  color: #019ed1;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.text-image-section p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.text-image-section img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .text-image-section {
+    padding: 20px 0;
+  }
+  .text-image-section h2 {
+    font-size: 1.5rem;
+  }
+  .text-image-section p {
+    font-size: 1rem;
+  }
+}
+.container {
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.about-us-section {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 40px 0;
+}
+
+.work-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.work-item i {
+  font-size: 24px;
+  color: #019ed1;
+  margin-right: 10px;
+}
+
+.work-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.accordion .card {
+  border: none;
+}
+
+.accordion .card-header {
+  background-color: #f9f9f9;
+  padding: 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.accordion .btn-link {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion .btn-link.collapsed {
+  color: #777;
+}
+
+.accordion .btn-link:focus {
+  box-shadow: none;
+}
+
+.accordion .card-body {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #fff;
+  border-top: 6px solid #019ed1;
+}
+
+.accordion .fas {
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.accordion .btn-link[aria-expanded='true'] .fas {
+  transform: rotate(180deg);
+}
+.eat-together {
+  background-color: #2c3e50;
+  text-align: center;
+  padding: 40px 20px; /* Increased padding for the whole section */
+  color: #ffffff;
+}
+
+.eat-together h2 {
+  margin-bottom: 30px; /* Increased space between text and input fields */
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.eat-together h2 span {
+  color: #019ed1;
+}
+
+.eat-together .emoji {
+  font-size: 24px;
+}
+
+.appointment-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px; /* Increased gap between input fields */
+}
+
+.input-field {
+  padding: 10px; /* Increased padding inside input fields */
+  border: none;
+  border-radius: 5px;
+  background-color: #5a6b82;
+  color: #ffffff;
+  width: 250px; /* Increased width of input fields */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.input-field::placeholder {
+  color: #aab1b9;
+}
+
+.input-field:focus {
+  background-color: #7a89a1;
+  outline: none;
+}
+
+.input-field:not(:placeholder-shown):valid {
+  background-color: #5a6b82; /* Reverts to the original color */
+  color: #ffffff;
+}
+
+.submit-button {
+  padding: 15px 30px; /* Increased padding for the submit button */
+  border: none;
+  border-radius: 5px;
+  background-color: #019ed1;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #019ed1;
+}
+
+@media (max-width: 600px) {
+  .input-field,
+  .submit-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7; /* Reduced opacity */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.3); /* Zoom-in effect */
+  opacity: 1; /* Restore opacity */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  transition: background 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+.text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column;
+  }
+
+  .gallery-item {
+    margin: 10px 0;
+  }
+}
+
+.footer {
+  position: relative;
+  background-color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content span {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top img {
+  width: 24px;
+  height: 24px;
+}
+.footer {
+  position: relative;
+  background-color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content span {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top i {
+  font-size: 24px;
+  color: #007bff;
+}

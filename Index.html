@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pflegerdienst Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hero-image,
+    .hero-content {
+      flex: 0 0 57%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hero-content {
+      flex: 0 0 43%;
+      background-color: #019ed1;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: slideInRight 1s ease-out;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-left: 15px;
+      align-items: center;
+
+      justify-content: center;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      margin-left: 15px;
+      justify-content: center;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 15px;
+      align-items: center;
+
+
+    }
+
+    .hero-buttons .btn {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: slideInLeft 1s ease-out;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="fixed-header">
+    <!-- Contact Info Section -->
+    <div class="contact-info bg-skyblue text-white">
+      <div class="container text-right">
+        <p>Jetzt bewerben! 0176 - 638 88 940 | info@pflegekraft-luethke.de</p>
+      </div>
+    </div>
+    <!-- Logo and Navigation Section -->
+    <div class="logo-nav bg-white shadow-sm">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-sm-12 text-left">
+            <img src="logo.jpeg" alt="Pflegedienst Logo" class="img-fluid logo">
+          </div>
+          <div class="col-md-6 col-sm-12 text-right">
+            <nav class="navbar navbar-expand-md navbar-light justify-content-end">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-us">Über uns</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#eating-together">Gemeinsam essen</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-image">
+      <img src="home.jpeg" alt="Nursing Professional" class="img-fluid">
+    </div>
+    <div class="hero-content">
+      <h1>Wir suchen Pflegefachkräfte</h1>
+      <p>Lernen Sie uns bei einem gemeinsamen Essen kennen und werden Sie Teil unseres Teams!</p>
+      <div class="hero-buttons">
+        <button class="btn btn-dark">Jetzt bewerben</button>
+        <button class="btn btn-light">Kontaktieren Sie uns</button>
+      </div>
+    </div>
+  </section>
+  <!-- New Centered Section -->
+  <section class="centered-section">
+    <div class="container text-center">
+      <img src="logo.jpeg" alt="Pflegedienst Logo" class="img-fluid centered-logo">
+      <h2>Gemeinsam für eine gute Zusammenarbeit</h2>
+      <p>Werde Teil unseres Pflegeteams!</p>
+      <hr class="centered-line">
+    </div>
+  </section>
+
+  <!-- New Section with Text and Image -->
+  <section class="text-image-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Berufung statt Job: Werde Teil unseres familiären Teams in der Palliativpflege!</h2>
+          <p>
+            Komm in unser Team und entfache deine Leidenschaft für die Palliativpflege! Hier geht es nicht nur um einen
+            Job, sondern
+            um eine Mission. In unserem familiären Umfeld ist jeder wichtig und wir arbeiten gemeinsam daran, das Leben
+            unserer
+            Patienten bis zum letzten Moment zu würdigen. Wenn du dich mit Herzblut für andere einsetzen möchtest und
+            ein Teil von
+            etwas Größerem sein willst, dann bist du bei uns genau richtig! Wir suchen nach jungen, engagierten
+            Pflegekräften, die
+            bereit sind, sich für unsere Patienten einzusetzen und von den Vorteilen unseres Unternehmens profitieren.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="members.jpeg" alt="Team Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add the sections for About Us and Eating Together here -->
+  <section id="about-us" class="my-5">
+    <!-- About Us Section -->
+    <section class="about-us-section">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Wie wir arbeiten?</h2>
+            <p>Durch unsere langjährige Erfahrung legen wir einen großen Stellenwert auf jeden Mitarbeiter & deren
+              Weiterentwicklung:</p>
+            <div class="work-item">
+              <i class="fas fa-users"></i>
+              <p><strong>Mitarbeiter</strong> – Kommunikation und Teamarbeit im Fokus</p>
+            </div>
+            <div class="work-item">
+              <i class="fas fa-graduation-cap"></i>
+              <p><strong>stetige Weiterbildung</strong> – bleibe immer auf dem neusten Stand</p>
+            </div>
+            <div class="work-item">
+              <i class="fas fa-handshake"></i>
+              <p><strong>Gemeinsam</strong> – arbeiten im Team wird bei uns groß geschrieben</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2>Was wir Dir bieten?</h2>
+            <div class="accordion" id="offerAccordion">
+              <div class="card mb-2">
+                <div class="card-header bg-white " id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      familiären Team <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#offerAccordion">
+                  <div class="card-body">
+                    In unserem familiären Team in der Palliativpflege sind wir mehr als bloße Mitarbeiter – wir sind
+                    eine Familie. Mit
+                    Leidenschaft, Empathie und Fachkompetenz begleiten wir unsere Patienten auf ihrem letzten Weg und
+                    stehen gemeinsam für
+                    Sorgen und Probleme füreinander ein!
+
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-header bg-white" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      Gehalt <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#offerAccordion">
+                  <div class="card-body">
+                    Du kannst bei uns bis zu 4300€ brutto verdienen plus 125€ Solizuschlag. Außerdem gibt es von uns
+                    Sonn- und
+                    Feiertagszuschuss.
+
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-header bg-white" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Wochenendarbeit <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#offerAccordion">
+                  <div class="card-body">
+                    Bei uns steht die Work-Life-Balance an erster Stelle! 🌟 Unsere Mitarbeiter/innen arbeiten nur ein
+                    Wochenende im Monat.
+                    Die restlichen Wochenenden sind komplett frei und können nach Belieben verplant werden.
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-white" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                      aria-expanded="false" aria-controls="collapseFour">
+                      vorraussetzungen <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#offerAccordion">
+                  <div class="card-body">
+                    Natürlich setzen wir eine abgeschlossene Ausbildung voraus, sowie einen Führerschein der Klasse B.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <section id="eating-together" class="my-5">
+    <div class="eat-together">
+      <h2>Lerne uns <span>jetzt einfach kennen</span> bei einem gemeinsamen Frühstück! <span class="emoji">😊</span>
+      </h2>
+      <form class="appointment-form">
+        <input type="text" placeholder="Your name" class="input-field" required>
+        <input type="email" placeholder="e-mail" class="input-field" required>
+        <input type="tel" placeholder="Telephone number" class="input-field" required>
+        <input type="text" placeholder="5+3?" class="input-field" required>
+        <button type="submit" class="submit-button">MAKE AN APPOINTMENT</button>
+      </form>
+    </div>
+  </section>
+
+
+  <section class="centered-section">
+    <div class="container text-center">
+      <img src="logo.jpeg" alt="Pflegedienst Logo" class="img-fluid centered-logo">
+      <h2>Immer für einander da</h2>
+      <p>Wir freuen uns auf Dich!</p>
+      <hr class="centered-line">
+    </div>
+  </section>
+
+
+  <div class="image-gallery">
+    <div class="gallery-item">
+      <img src="1.jpeg" alt="Regular Training">
+      <div class="overlay">
+        <div class="text">REGELMÄSSIGE WEITERBILDUNGEN</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="2.avif" alt="Patient-Oriented">
+      <div class="overlay">
+        <div class="text">PATIENTENORIENTIERT</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="3.jpg" alt="Opportunities for Advancement">
+      <div class="overlay">
+        <div class="text">AUFSTIEGSMÖGLICHKEITEN</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+      <span>Nursing service Dr. med. Lüthge & Kunz GmbH</span>
+      <span>| Mail: <a href="mailto:info@pflegefachkraft-luethke.de">info@pflegefachkraft-luethke.de</a></span>
+      <span>| Mobile: 0176 - 638 88 940</span>
+      <span>| <a href="#dataprotection">Data protection</a></span>
+      <span>| <a href="#legalnotice">Legal notice</a></span>
+    </div>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
