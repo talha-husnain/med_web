@@ -12,112 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .hero-section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: stretch;
-      padding: 0;
-      margin: 0;
-    }
 
-    .hero-image,
-    .hero-content {
-      flex: 0 0 57%;
-      padding: 0;
-      margin: 0;
-    }
-
-    .hero-content {
-      flex: 0 0 43%;
-      background-color: #019ed1;
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      animation: slideInRight 1s ease-out;
-    }
-
-    .hero-content h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-left: 15px;
-      align-items: center;
-
-      justify-content: center;
-    }
-
-    .hero-content p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-      margin-left: 15px;
-      justify-content: center;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 15px;
-      align-items: center;
-
-
-    }
-
-    .hero-buttons .btn {
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
-
-    .hero-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      animation: slideInLeft 1s ease-out;
-    }
-
-    @keyframes slideInLeft {
-      from {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes slideInRight {
-      from {
-        transform: translateX(100%);
-        opacity: 0;
-      }
-
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .hero-section {
-        flex-direction: column;
-      }
-
-      .hero-content {
-        text-align: center;
-      }
-
-      .hero-content h1 {
-        font-size: 2rem;
-      }
-
-      .hero-content p {
-        font-size: 1rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -168,8 +63,8 @@
       <h1>Wir suchen Pflegefachkräfte</h1>
       <p>Lernen Sie uns bei einem gemeinsamen Essen kennen und werden Sie Teil unseres Teams!</p>
       <div class="hero-buttons">
-        <button class="btn btn-dark">Jetzt bewerben</button>
-        <button class="btn btn-light">Kontaktieren Sie uns</button>
+        <a class="btn btn-dark" href="#text-image-section">Jetzt bewerben</a>
+        <a class="btn btn-dark" href="#text-image-section">Kontaktieren Sie uns</a>
       </div>
     </div>
   </section>
@@ -184,7 +79,7 @@
   </section>
 
   <!-- New Section with Text and Image -->
-  <section class="text-image-section">
+  <section id="text-image-section">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -320,11 +215,11 @@
       <h2>Lerne uns <span>jetzt einfach kennen</span> bei einem gemeinsamen Frühstück! <span class="emoji">😊</span>
       </h2>
       <form class="appointment-form">
-        <input type="text" placeholder="Your name" class="input-field" required>
-        <input type="email" placeholder="e-mail" class="input-field" required>
-        <input type="tel" placeholder="Telephone number" class="input-field" required>
+        <input type="text" placeholder="lhr name" class="input-field" required>
+        <input type="email" placeholder="E-mail" class="input-field" required>
+        <input type="tel" placeholder="Telefonnummer" class="input-field" required>
         <input type="text" placeholder="5+3?" class="input-field" required>
-        <button type="submit" class="submit-button">MAKE AN APPOINTMENT</button>
+        <button type="submit" class="submit-button">TERMIN VEREINBAREN</button>
       </form>
     </div>
   </section>

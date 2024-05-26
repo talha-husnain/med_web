@@ -48,50 +48,69 @@ body {
 .hero-section {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch; /* Ensure equal height */
+  align-items: stretch;
   padding: 0;
   margin: 0;
 }
 
 .hero-image,
 .hero-content {
-  flex: 0 0 40%;
+  flex: 0 0 57%;
   padding: 0;
   margin: 0;
 }
 
 .hero-content {
-  flex: 0 0 60%;
+  flex: 0 0 43%;
   background-color: #019ed1;
   color: white;
-  text-align: left;
+  text-align: left; /* Align text to the left */
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
   justify-content: center;
   animation: slideInRight 1s ease-out;
+  padding: 0 10%; /* Add horizontal padding */
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-buttons {
+  width: 100%;
+  max-width: 100%; /* Ensure elements do not overflow */
 }
 
 .hero-content h1 {
+  align-self: self-start;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-left: 15px;
+  margin: 10px 0; /* Adjust margins as needed */
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  margin-left: 15px;
 }
 
 .hero-buttons {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  margin-left: 15px;
 }
 
 .hero-buttons .btn {
+  margin: 0 10px 10px 10px;
+}
+.hero-buttons .btn {
   margin-right: 10px;
   margin-bottom: 10px;
+  width: 170px;
+  text-decoration: none; /* Ensure no underline on links */
+  color: white; /* Ensure the text color is correct */
+}
+
+.btn.btn-dark {
+  background-color: #343a40;
+  color: white;
 }
 
 .hero-image img {
@@ -127,16 +146,88 @@ body {
   .hero-section {
     flex-direction: column;
   }
+
   .hero-content {
     text-align: center;
+    padding: 20px; /* Add padding for smaller screens */
   }
+
   .hero-content h1 {
     font-size: 2rem;
   }
+
   .hero-content p {
     font-size: 1rem;
   }
 }
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  justify-content: center;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  align-items: center;
+}
+
+.hero-buttons .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
 .centered-section {
   padding: 40px 0;
 }
