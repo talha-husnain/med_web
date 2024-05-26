@@ -1,5 +1,7 @@
 .fixed-header {
   position: fixed;
+  margin-top: -2%;
+  padding-top: 0%;
   top: 0;
   left: 0;
   right: 0;
