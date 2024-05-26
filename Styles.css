@@ -42,7 +42,7 @@
 
 /* Additional styling for the fixed position */
 body {
-  padding-top: 170px; /* Adjust this value to account for the fixed header height */
+  padding-top: 220px; /* Adjust this value to account for the fixed header height */
 }
 
 .hero-section {
@@ -103,7 +103,7 @@ body {
 .hero-buttons .btn {
   margin-right: 10px;
   margin-bottom: 10px;
-  width: 150px;
+  width: 170px;
   text-decoration: none; /* Ensure no underline on links */
   color: white; /* Ensure the text color is correct */
 }
