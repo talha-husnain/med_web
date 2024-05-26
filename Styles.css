@@ -103,7 +103,7 @@ body {
 .hero-buttons .btn {
   margin-right: 10px;
   margin-bottom: 10px;
-  width: 170px;
+  width: 150px;
   text-decoration: none; /* Ensure no underline on links */
   color: white; /* Ensure the text color is correct */
 }
