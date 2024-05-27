@@ -84,14 +84,15 @@ body {
 
 .hero-content h1 {
   align-self: flex-start;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: bold;
   margin: 10px 0; /* Adjust margins as needed */
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .hero-buttons {
@@ -191,7 +192,8 @@ body {
 
 .text-image-section h2 {
   color: #019ed1;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
@@ -221,7 +223,15 @@ body {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #019ed1;
+
+  font-weight: bold;
+}
+p {
+  font-size: 1rem;
+  color: #666;
   margin-bottom: 20px;
 }
 .about-us-section {
@@ -298,6 +308,7 @@ h2 {
 .accordion .card-body {
   padding: 15px;
   font-size: 16px;
+  color: #6b6b6b;
   background-color: #fff;
 }
 
