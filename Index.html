@@ -10,11 +10,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Bootstrap JavaScript -->
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -206,7 +202,6 @@
     </section>
   </section>
 
-
   <section id="eating-together" class="my-5">
     <div class="eat-together">
       <h2>Lerne uns <span>jetzt einfach kennen</span> bei einem gemeinsamen Essen! <span class="emoji">😊</span>
@@ -221,7 +216,6 @@
     </div>
   </section>
 
-
   <section class="centered-section">
     <div class="container text-center">
       <img src="logo.jpeg" alt="Pflegedienst Logo" class="img-fluid centered-logo">
@@ -230,7 +224,6 @@
       <hr class="centered-line">
     </div>
   </section>
-
 
   <div class="image-gallery">
     <div class="gallery-item">
@@ -273,42 +266,7 @@
         behavior: 'smooth'
       });
     }
-    document.addEventListener("DOMContentLoaded", function () {
-      var accordion = document.getElementById('offerAccordion');
-      var collapseElements = accordion.querySelectorAll('.collapse');
-      var buttons = accordion.querySelectorAll('.btn-link');
-
-      buttons.forEach(function (button) {
-        button.addEventListener('click', function () {
-          var target = document.querySelector(button.getAttribute('data-target'));
-
-          if (target.classList.contains('show')) {
-            target.classList.remove('show');
-            button.setAttribute('aria-expanded', 'true');
-            button.classList.add('collapsed');
-          } else {
-            collapseElements.forEach(function (element) {
-              element.classList.remove('show');
-              var button = element.previousElementSibling.querySelector('.btn-link');
-              if (button) {
-                button.setAttribute('aria-expanded', 'false');
-                button.classList.add('collapsed');
-              }
-            });
-
-            target.classList.add('show');
-            button.setAttribute('aria-expanded', 'false');
-            // button.classList.remove('collapsed');
-          }
-        });
-      });
-    });
-
   </script>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

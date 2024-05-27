@@ -223,6 +223,10 @@ body {
   margin-top: 50px;
 }
 
+.container {
+  margin-top: 50px;
+}
+
 h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
@@ -280,7 +284,6 @@ p {
 }
 
 .accordion .collapse.show ~ .card-header::before {
-  border-top: 6px solid #019ed1;
   display: block;
 }
 
