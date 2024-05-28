@@ -93,17 +93,18 @@ body {
   margin-bottom: 10px;
 }
 .image-container {
-    text-align: start;
-    margin-top: 20px;
+  text-align: start;
+  margin-top: 20px;
 }
 
 .image-container img {
-    width: 10%;
-    height: auto;
-    border-radius: 5px;
+  width: 10%;
+  height: auto;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
-    .image-container img {
-        width: 80%;
-    }
+  .image-container img {
+    width: 80%;
+  }
+}
